@@ -7,7 +7,7 @@ import Whatsap from '../../assets/logoWhat.jpg'
 
 const FooterSN = () => {
     return (
-        <footer className='footerSN__Principal'>
+        <footer className='footerSN__Principal'> 
             <div><h2 className='footerSN__tittle'>Social Networks</h2></div>
             <div className='footerSN__container' >
             <a href="https://www.facebook.com/isaac.gomezlopez3" target="_blank" rel="noopener noreferrer">

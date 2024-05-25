@@ -14,8 +14,7 @@ const Footer = () => {
                     </p>
                 </article>
                 <a href="mailto:isaacglgomez98@hotmail.com?subject=Booking%20a%20Call&body=Hi%20there,%20I%20would%20like%20to%20schedule%20a%20call."> 
-                <button 
-                className='footer__button' type="button">Call of me</button>
+                <button className='footer__button' type="button">Call of me</button>
                 </a>
             </div>
         </footer>
