@@ -3,14 +3,20 @@
 @tailwind utilities;
 
 /*Aqui va la exportacion de la fuente*/
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 body {
- padding: 0;
- margin: 0;
- overflow-x: hidden;
- scroll-behavior: smooth;
- background-color: #FFF7F0; 
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(60, 79, 55, 1) 35%,
+    rgba(40, 182, 27, 1) 100%
+  );
 }
 
 a {
@@ -20,5 +26,357 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: "Playfair Display";
 }
 
+/*Aqui comienza el Nav y las propiedades de sus componentes*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1090px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.nav__imgLogo {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  margin-left: 5%;
+}
+
+.nav__buttonLogo2{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  margin-left: 5%;
+}
+
+.nav__textTitle {
+  font-size: 30px;
+  align-self: center;
+  margin-left: 10%;
+  font-weight: bold;
+}
+
+/*Aqui comienzan los estilos del about*/
+.bod {
+  width: 100%; /*ancho*/
+  display: flex; 
+  min-width: 1110px; /*ancho minimo*/
+  align-items: center; /*alinear elementos*/
+  margin-top: 8.53rem; /*Margen superior*/
+  justify-content: center;
+}
+
+.about__ftPerfil {
+  margin-right: 0.57rem; /*margen derecho*/
+  height: 350px; /*altura*/
+  width: 350px; /*radio-frontera*/
+  border-radius: 20px;
+  margin-left: 1%; /*margen izquierdo*/
+}
+
+.about__tittle {
+  font-size: 200%; /*tamaño de fuente*/
+  align-self: center;
+  letter-spacing: 0.08rem;
+  font-family: "Playfair Display";
+  margin-left: 10%;
+}
+
+.about__body {
+  font-size: 120%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  font-family: "Playfair Display";
+}
+
+.about__buttonLinkedin {
+  color: white;
+  height: 3.5rem;
+  font-size: 1rem;
+  padding: 0 2.9rem;
+  border-radius: 9999px;
+  letter-spacing: 0.03rem;
+  margin-left: 10%;
+  background-color: black;
+}
+
+.about__buttonLinkedin:hover {
+  background-color: green;
+}
+
+
+.about__buttonCV{
+  color: white;
+  height: 3.5rem;
+  font-size: 1rem;
+  padding: 0 2.9rem;
+  border-radius: 9999px;
+  letter-spacing: 0.03rem;
+  margin-left: 10%;
+  background-color: black;
+
+}
+
+.about__buttonCV:hover {
+  background-color: green;
+}
+
+
+
+/*Contiene los estilos de caro*/
+
+.caro__coutainer {
+  margin-top: 11%;
+}
+
+.caro__coutainer h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.caro__coutainer div:nth-of-type(1) {
+  cursor: grab;
+  display: flex;
+  width: 2827px;
+  left: -53.45rem;
+  position: relative;
+  margin-top: 3.5rem;
+}
+
+.caro__coutainer div:nth-of-type(1) figure {
+  width: 540px;
+  margin: 0 0.94rem;
+  pointer-events: none;
+}
+
+.caro__coutainer div:nth-of-type(1) figure:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.caro__coutainer div:nth-of-type(1) figure:nth-of-type(5) {
+  margin-right: 0;
+}
+
+.caro__coutainer div:nth-of-type(2) {
+  display: flex;
+  margin-top: 3.45rem;
+  justify-content: center;
+}
+
+.caro__coutainer div:nth-of-type(2) button {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.caro__coutainer div:nth-of-type(2) button:hover {
+  background-color: #10aa2a;
+}
+
+.carro__img {
+  border-radius: 15%;
+}
+
+.carro__car {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 120%;
+  cursor: pointer;
+}
+
+/*Se contiene todos los estilos de Footer*/
+.footer__container {
+  display: flex;
+  min-width: 1090px;
+  margin-top: 5rem;
+  align-items: center;
+  border-radius: 8px;
+  padding: 5.2rem 4.07rem;
+  background-color: black;
+  justify-content: space-between;
+}
+
+.footer__title {
+  color: white;
+  font-size: 125%;
+  align-self: center;
+  letter-spacing: 0.08rem;
+  margin-left: 10%;
+}
+
+.footer__body {
+  color: white;
+  margin-top: 1.5rem;
+}
+
+.footer__button {
+  color: white;
+  height: 3.5rem;
+  font-size: 1rem;
+  padding: 0 2.9rem;
+  border-radius: 9999px;
+  letter-spacing: 0.03rem;
+  margin-left: 10%;
+  background-color: green;
+}
+
+.footer__button:hover {
+  background-color: grey;
+}
+
+/*Aqui comienza los estilos de Skills*/
+.skill {
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 1090px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.skill__tittle {
+  margin-top: 20%;
+  font-size: 200%;
+  align-self: center;
+  letter-spacing: 0.08rem;
+  margin-left: 10%;
+  margin-bottom: 0.5em; /* Espacio debajo de los títulos */
+  color: whitesmoke;
+}
+
+.skill__body {
+  font-size: 130%;
+  margin-top: 20px;
+  margin-bottom: 1em;
+  margin-left: 1%;
+  color: whitesmoke;
+  list-style-type: disc; /* Tipo de viñeta, cambia según sea necesario */
+  padding-left: 1.5em;  /* Espacio a la izquierda para alinear las viñetas */
+  margin: 0;            /* Elimina el margen */
+  position: relative;
+  line-height: 1.5;
+}
+
+
+/*Experiencia*/
+.skill__tittleExperience{
+  margin-top: 20%;
+  font-size: 200%;
+  align-self: center;
+  letter-spacing: 0.08rem;
+  margin-left: 1%;
+  margin-right: 10%;
+  margin-bottom: 0.5em; /* Espacio debajo de los títulos */
+
+}
+
+.skill__experience{
+  font-size: 130%;
+  margin-top: 20px;
+  margin-bottom: 1em;
+  margin-left: 1%;
+  list-style-type: disc; /* Tipo de viñeta, cambia según sea necesario */
+  padding-left: 1.5em;  /* Espacio a la izquierda para alinear las viñetas */
+  margin: 0;            /* Elimina el margen */
+  position: relative;
+  line-height: 1.5;
+}
+
+/*Skill*/
+.skill__tittleSkill {
+  font-size: 200%;
+  align-self: center;
+  letter-spacing: 0.08rem;
+  margin-right: 10%;
+  margin-bottom: 0.5em;
+}
+
+.skill__skill{
+  font-size: 150%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 50%;
+}
+
+
+
+/*Aqui se maneja el texto y la barra de porcentaje de*/
+
+.skills__listSkill {
+  list-style-type: disc; /* Tipo de viñeta, cambia según sea necesario */
+  padding-left: 1.5em;  /* Espacio a la izquierda para alinear las viñetas */
+  margin: 0;            /* Elimina el margen */
+}
+
+
+.skills__listSkill li {
+  margin-bottom: 1em; /* Espacio entre elementos de la lista */
+  line-height: 1.5;   /* Altura de línea para un mejor espaciado */
+  position: relative;
+}
+
+
+.skills__progressBar {
+  background-color: #e0e0e0; /* Color de fondo de la barra */
+  border-radius: 8px;        /* Bordes redondeados */
+  overflow: hidden;          /* Oculta el contenido que se desborda */
+  margin-top: 0.5em;         /* Margen superior */
+  height: 10px;              /* Altura de la barra */
+}
+
+
+.skills__progress {
+  background-color: #76c7c0; /* Color de la barra de progreso */
+  height: 100%;              /* Altura completa de la barra */
+  border-radius: 8px;        /* Bordes redondeados */
+}
+
+/*Contiene los estilos de FooterSN*/
+
+.footerSN__container {
+  display: flex;
+  min-width: 1090px;
+  margin-top: 25px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 5.2rem 4.07rem;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(60, 79, 55, 1) 35%,
+    rgba(40, 182, 27, 1) 100%
+  );
+}
+
+.footerSN__tittle{
+  font-size: 200%; /*tamaño de fuente*/
+  align-self: center;
+  letter-spacing: 0.08rem;
+  margin-top: 30px;
+  margin-left: 1%;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.social-media-icon {
+  cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+  border-radius: 45%; /* Hace los iconos circulares */
+  margin-right: 1%; /*margen derecho*/
+  height: 250px; /*altura*/
+  width: 250px; /*radio-frontera*/
+  margin-left: 1%; /*margen izquierdo*/
+
+}
