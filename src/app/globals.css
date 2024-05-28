@@ -45,7 +45,7 @@ a {
   margin-left: 5%;
 }
 
-.nav__buttonLogo2{
+.nav__buttonLogo2 {
   height: 200px;
   width: 200px;
   border-radius: 20px;
@@ -62,7 +62,7 @@ a {
 /*Aqui comienzan los estilos del about*/
 .bod {
   width: 100%; /*ancho*/
-  display: flex; 
+  display: flex;
   min-width: 1110px; /*ancho minimo*/
   align-items: center; /*alinear elementos*/
   margin-top: 8.53rem; /*Margen superior*/
@@ -81,7 +81,6 @@ a {
   font-size: 200%; /*tamaño de fuente*/
   align-self: center;
   letter-spacing: 0.08rem;
-  font-family: "Playfair Display";
   margin-left: 10%;
 }
 
@@ -90,7 +89,6 @@ a {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 10%;
-  font-family: "Playfair Display";
 }
 
 .about__buttonLinkedin {
@@ -108,8 +106,7 @@ a {
   background-color: green;
 }
 
-
-.about__buttonCV{
+.about__buttonCV {
   color: white;
   height: 3.5rem;
   font-size: 1rem;
@@ -118,56 +115,61 @@ a {
   letter-spacing: 0.03rem;
   margin-left: 10%;
   background-color: black;
-
 }
 
 .about__buttonCV:hover {
   background-color: green;
 }
 
-
-
 /*Contiene los estilos de caro*/
 
-.caro__coutainer {
+.caro__container {
   margin-top: 11%;
 }
 
-.caro__coutainer h2 {
+.caro__container h2 {
   font-size: 2rem;
   text-align: center;
 }
 
-.caro__coutainer div:nth-of-type(1) {
-  cursor: grab;
+.caro__container .caro__content {
   display: flex;
-  width: 2827px;
-  left: -53.45rem;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
   position: relative;
   margin-top: 3.5rem;
 }
 
-.caro__coutainer div:nth-of-type(1) figure {
-  width: 540px;
-  margin: 0 0.94rem;
+.caro__container .caro__content figure {
+  width: 720px; /* Ajusta el ancho del contenedor de la imagen según sea necesario */
+  margin: 0 1.5rem; /* Ajusta el margen si es necesario */
   pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.caro__coutainer div:nth-of-type(1) figure:nth-of-type(1) {
+.caro__container .caro__content figure img {
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  height: auto; /* Mantener la relación de aspecto de la imagen */
+  border-radius: 15%; /* Redondear bordes de la imagen */
+}
+
+.caro__container .caro__content figure:nth-of-type(1) {
   margin-left: 0;
 }
 
-.caro__coutainer div:nth-of-type(1) figure:nth-of-type(5) {
+.caro__container .caro__content figure:nth-of-type(5) {
   margin-right: 0;
 }
 
-.caro__coutainer div:nth-of-type(2) {
+.caro__container .caro__buttons {
   display: flex;
   margin-top: 3.45rem;
   justify-content: center;
 }
 
-.caro__coutainer div:nth-of-type(2) button {
+.caro__container .caro__buttons button {
   width: 44px;
   height: 44px;
   display: flex;
@@ -176,14 +178,17 @@ a {
   align-items: center;
   justify-content: center;
   background-color: black;
+  cursor: pointer;
 }
 
-.caro__coutainer div:nth-of-type(2) button:hover {
+.caro__container .caro__buttons button:hover {
   background-color: #10aa2a;
 }
 
 .carro__img {
   border-radius: 15%;
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  height: auto; /* Mantener la relación de aspecto de la imagen */
 }
 
 .carro__car {
@@ -191,8 +196,22 @@ a {
   flex-direction: column;
   align-items: center;
   font-size: 120%;
-  cursor: pointer;
+  cursor: default; /* Cambiado de pointer a default */
 }
+
+.carro__link {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: bold;
+  pointer-events: auto; /* Permitir clics */
+}
+
+.carro__link:hover {
+  text-decoration: underline;
+}
+
 
 /*Se contiene todos los estilos de Footer*/
 .footer__container {
@@ -261,15 +280,14 @@ a {
   margin-left: 1%;
   color: whitesmoke;
   list-style-type: disc; /* Tipo de viñeta, cambia según sea necesario */
-  padding-left: 1.5em;  /* Espacio a la izquierda para alinear las viñetas */
-  margin: 0;            /* Elimina el margen */
+  padding-left: 1.5em; /* Espacio a la izquierda para alinear las viñetas */
+  margin: 0; /* Elimina el margen */
   position: relative;
   line-height: 1.5;
 }
 
-
 /*Experiencia*/
-.skill__tittleExperience{
+.skill__tittleExperience {
   margin-top: 20%;
   font-size: 200%;
   align-self: center;
@@ -277,17 +295,16 @@ a {
   margin-left: 1%;
   margin-right: 10%;
   margin-bottom: 0.5em; /* Espacio debajo de los títulos */
-
 }
 
-.skill__experience{
+.skill__experience {
   font-size: 130%;
   margin-top: 20px;
   margin-bottom: 1em;
   margin-left: 1%;
   list-style-type: disc; /* Tipo de viñeta, cambia según sea necesario */
-  padding-left: 1.5em;  /* Espacio a la izquierda para alinear las viñetas */
-  margin: 0;            /* Elimina el margen */
+  padding-left: 1.5em; /* Espacio a la izquierda para alinear las viñetas */
+  margin: 0; /* Elimina el margen */
   position: relative;
   line-height: 1.5;
 }
@@ -301,44 +318,39 @@ a {
   margin-bottom: 0.5em;
 }
 
-.skill__skill{
+.skill__skill {
   font-size: 150%;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 50%;
 }
 
-
-
 /*Aqui se maneja el texto y la barra de porcentaje de*/
 
 .skills__listSkill {
   list-style-type: disc; /* Tipo de viñeta, cambia según sea necesario */
-  padding-left: 1.5em;  /* Espacio a la izquierda para alinear las viñetas */
-  margin: 0;            /* Elimina el margen */
+  padding-left: 1.5em; /* Espacio a la izquierda para alinear las viñetas */
+  margin: 0; /* Elimina el margen */
 }
-
 
 .skills__listSkill li {
   margin-bottom: 1em; /* Espacio entre elementos de la lista */
-  line-height: 1.5;   /* Altura de línea para un mejor espaciado */
+  line-height: 1.5; /* Altura de línea para un mejor espaciado */
   position: relative;
 }
 
-
 .skills__progressBar {
   background-color: #e0e0e0; /* Color de fondo de la barra */
-  border-radius: 8px;        /* Bordes redondeados */
-  overflow: hidden;          /* Oculta el contenido que se desborda */
-  margin-top: 0.5em;         /* Margen superior */
-  height: 10px;              /* Altura de la barra */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  margin-top: 0.5em; /* Margen superior */
+  height: 10px; /* Altura de la barra */
 }
-
 
 .skills__progress {
   background-color: #76c7c0; /* Color de la barra de progreso */
-  height: 100%;              /* Altura completa de la barra */
-  border-radius: 8px;        /* Bordes redondeados */
+  height: 100%; /* Altura completa de la barra */
+  border-radius: 8px; /* Bordes redondeados */
 }
 
 /*Contiene los estilos de FooterSN*/
@@ -360,7 +372,7 @@ a {
   );
 }
 
-.footerSN__tittle{
+.footerSN__tittle {
   font-size: 200%; /*tamaño de fuente*/
   align-self: center;
   letter-spacing: 0.08rem;
@@ -378,5 +390,4 @@ a {
   height: 250px; /*altura*/
   width: 250px; /*radio-frontera*/
   margin-left: 1%; /*margen izquierdo*/
-
 }
